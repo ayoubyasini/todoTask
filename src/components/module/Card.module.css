@@ -1,0 +1,78 @@
+.container {
+  position: relative;
+  background: #313131;
+  border: 2px solid #3e3e3e;
+  border-radius: 15px;
+  padding: 10px 15px;
+  height: 200px;
+  width: 24%;
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: #f6f6f6;
+}
+
+.container h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container p {
+  font-size: 14px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+
+.row button {
+  border: none;
+  border-radius: 30px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+
+.button svg {
+  cursor: pointer;
+  color: #a8aab2;
+  font-size: 20px;
+}
+
+.button svg:nth-child(1) {
+  margin-right: 7px;
+}
+
+.rowOne svg {
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  font-size: 30px;
+  color: #a8aab2;
+  /* transform: scaleX(-1); */
+}
+
+.rowTwo p {
+  font-size: 13px;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 31.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 48% !important;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .container {
+    width: 100% !important;
+  }
+}

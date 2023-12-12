@@ -1,0 +1,9 @@
+.incomplete {
+  background: #da6e5f;
+  cursor: pointer;
+}
+
+.complete {
+  background: #68af68;
+  cursor: pointer;
+}

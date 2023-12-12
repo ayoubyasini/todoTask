@@ -1,0 +1,19 @@
+.button {
+    background: none;
+    font-size: 20px;
+    box-shadow: none;
+    border: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+    color: #898b8f;
+    transition: all 0.3s;
+    padding-left: 40px;
+}
+
+.button svg {
+    margin-right: 5px;
+}
+.button:hover {
+    transition: all 0.3s;
+    color: #d3d3d3;
+}

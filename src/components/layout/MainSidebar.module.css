@@ -1,0 +1,148 @@
+.container {
+  width: 15%;
+  height: 93vh;
+  background-color: #212120;
+  border: 2px solid #2e2e2e;
+  border-radius: 15px;
+  z-index: 200;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  z-index: 200;
+}
+
+.hiddenSidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.avatar {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar h6 {
+  margin-top: 10px;
+}
+
+.navigation {
+  width: 100%;
+}
+
+.navigation ul {
+  list-style: none;
+}
+
+.navigation ul li {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 7.8px 0px;
+}
+
+.navigation ul li:hover {
+  color: #fff;
+  border-right: 4px solid #68af68;
+  background-color: #323232;
+}
+
+.navigation ul li.active {
+  color: #fff;
+  border-right: 4px solid #68af68;
+  background-color: #323232;
+}
+
+.navigation ul li a svg {
+  margin-right: 20px;
+  margin-left: 25px;
+}
+
+.signout {
+  width: 100%;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .navigation ul li {
+    padding: 5px 0px;
+  }
+
+  .navigation ul li a svg {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  .navigation ul li a {
+    font-size: 14px;
+  }
+}
+
+.button {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    position: absolute;
+    width: 0px !important;
+    left: 10px;
+    background: none;
+    border: none;
+  }
+
+  .sidebar {
+    position: absolute;
+    transition: all 0.5s;
+    height: 93vh;
+    background-color: #212120;
+    border: 2px solid #2e2e2e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  }
+
+  .hiddenSidebar {
+    position: absolute;
+    transform: translate(-210px, 0);
+    transition: all 0.5s;
+    height: 93vh;
+    background-color: #212120;
+    border: 2px solid #2e2e2e;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    border-radius: 0px 10px 10px 0px;
+    right: -40px;
+    background: #212120;
+    border: 2px solid #2e2e2e;
+    width: 40px;
+    height: 40px;
+    border-left: none;
+  }
+  .button svg {
+    font-size: 20px;
+    color: #737375;
+  }
+}

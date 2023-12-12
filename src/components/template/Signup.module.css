@@ -1,0 +1,71 @@
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.boxForm {
+  max-width: 800px;
+  background-color: #323232;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin: auto;
+  border: 3px solid #3c3c3c;
+}
+
+.boxForm span {
+  margin: auto;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+.boxInput {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+.boxInput label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.boxInput input {
+  padding: 10px;
+  margin-top: 3px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 400px;
+  outline: 2px solid #747373;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.boxForm button {
+  background-color: #68af68;
+  border: none;
+  padding: 5px;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-size: 15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .boxInput input {
+    width: 250px;
+  }
+
+  .boxForm {
+    padding: 7.5px 15px;
+  }
+}

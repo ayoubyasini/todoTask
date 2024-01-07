@@ -15,6 +15,9 @@ function AddTods({ title, data }) {
   // if(data) {
   //   id = data[0]._id;
   // }
+
+  const [id, setId] = useState();
+
   const [todosData, setTodosData] = useState({
     title: "",
     description: "",
@@ -27,7 +30,7 @@ function AddTods({ title, data }) {
   useEffect(() => {
     if (data) {
       const { title, description, status, customDate, important } = data[0];
-      console.log(important);
+
       setTodosData({
         title: title,
         description: description,
@@ -36,6 +39,7 @@ function AddTods({ title, data }) {
         customDate: customDate,
         checked: status == "complete" ? true : false,
       });
+      setId(data[0]._id);
     }
   }, []);
 

@@ -11,13 +11,7 @@ import styles from "./addtask.module.css";
 import ToasterC from "../module/ToasterC";
 
 function AddTods({ title, data }) {
-  // let id;
-  // if(data) {
-  //   id = data[0]._id;
-  // }
-
   const [id, setId] = useState();
-
   const [todosData, setTodosData] = useState({
     title: "",
     description: "",
